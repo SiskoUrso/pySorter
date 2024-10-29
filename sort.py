@@ -27,6 +27,30 @@ def create_dir(directory):
         
 
 def move_files(files, directory, prefix=None):
+        """
+    Moves a list of files to a specified directory, optionally filtering by a prefix.
+
+    Parameters
+    ----------
+    files : list
+        A list of file names to be moved.
+    directory : str
+        The target directory where files should be moved. The directory will be created if it does not exist.
+    prefix : str, optional
+        A prefix to filter the files by. Only files starting with this prefix will be moved. If None, all files in the list are moved.
+
+    Behavior
+    --------
+    - Creates the target directory if it does not exist.
+    - Moves each file from the list to the specified directory.
+    - Adds each successfully moved file to the global `files_moved` list.
+    - Prints a message indicating the move for each file.
+    - Catches and prints a message for `FileNotFoundError` if a file is not found.
+
+    Note
+    ----
+    Ensure that `create_dir` and `shutil` are properly imported and that `files_moved` is defined globally.
+    """
         create_dir(directory)
         for file in files:
             try:
