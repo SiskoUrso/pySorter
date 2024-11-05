@@ -69,6 +69,7 @@ def move_files(files, directory, prefix=None):
                 files_moved.append(file)
             except FileNotFoundError:
                 print(f"File not found: {file}")
+        print()
 
 files = [f for f in os.listdir('.') if os.path.isfile(f)]   # List Comprehension - iterates through all files in current directory while skipping directories
 
