@@ -2,7 +2,7 @@ import os, shutil
 
 # Directories and Filetypes
 FILE_CATEGORIES = {
-    "Images": (".jpg", ".png", ".jpeg", ".gif", ".bmp", ".svg", ".webp", ".ico", ".tiff", ".tif", ".heic"),
+    "Images": (".jpg", ".png", ".jpeg", ".gif", ".bmp", ".svg", ".webp", ".ico", ".tiff", ".tif", ".HEIC"),
     "JSON": (".json", ".jsonc", ".geojson"),
     "Documents": (".pdf", ".doc", ".docx", ".txt", ".rtf", ".odt", ".md", ".pages"),
     "PairDrop": "PairDrop_",
