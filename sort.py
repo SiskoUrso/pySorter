@@ -19,6 +19,7 @@ FILE_CATEGORIES = {
     "Config": (".env", ".ini", ".cfg", ".conf", ".config", ".properties"),
     "Logs": (".log",),
     "RSS": (".rss", ".atom"),
+    "SSL": (".crt", ".key", ".pem", ".pub", ".cer"),
 }
 
 def create_dir(directory):
