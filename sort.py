@@ -15,7 +15,7 @@ FILE_CATEGORIES = {
     "Excalidraw": (".excalidraw", ".excalidrawlib"),
     "Data": (".csv", ".tsv", ".xls", ".xlsx", ".sqlite", ".db", ".sql"),
     "HTML": (".html", ".htm"),
-    "CSS": ".css",
+    "CSS": (".css",),
     "Config": (".env", ".ini", ".cfg", ".conf", ".config", ".properties"),
     "Logs": (".log",),
     "RSS": (".rss", ".atom"),
