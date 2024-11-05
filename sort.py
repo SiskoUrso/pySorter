@@ -2,15 +2,23 @@ import os, shutil
 
 # Directories and Filetypes
 FILE_CATEGORIES = {
-    "Images": (".jpg", ".png", ".jpeg"),
+    "Images": (".jpg", ".png", ".jpeg", ".gif", ".bmp", ".svg", ".webp", ".ico", ".tiff", ".tif", ".heic"),
     "JSON": (".json", ".jsonc", ".geojson"),
-    "Documents": (".pdf", ".doc", ".docx", ".txt"),
+    "Documents": (".pdf", ".doc", ".docx", ".txt", ".rtf", ".odt", ".md", ".pages"),
     "PairDrop": "PairDrop_",
     "Archives": (".zip", ".rar", ".7z", ".tar", ".gz"),
     "Videos": (".mp4", ".mov", ".mkv", ".avi"),
     "Audio": (".mp3", ".wav", ".ogg", ".flac", ".m4a"),
     "Books": (".epub", ".mobi"),
     "Packages": (".deb", ".rpm", ".apk", ".exe", ".msi", ".dmg", ".pkg", ".appimage", ".jar", ".flatpak", ".snap"),
+    "YML": (".yml", ".yaml"),
+    "Excalidraw": (".excalidraw", ".excalidrawlib"),
+    "Data": (".csv", ".tsv", ".xls", ".xlsx", ".sqlite", ".db", ".sql"),
+    "HTML": (".html", ".htm"),
+    "CSS": ".css",
+    "Config": (".env", ".ini", ".cfg", ".conf", ".config", ".properties"),
+    "Logs": (".log",),
+    "RSS": (".rss", ".atmos"),
 }
 
 def create_dir(directory):
@@ -24,7 +32,7 @@ def create_dir(directory):
     """
     if not os.path.exists(directory):
         os.mkdir(directory)
-        print(f"*****Created Directory: {directory}*****")
+        print(f"*****Created Directory: {directory}*****\n")
         
 
 def move_files(files, directory, prefix=None):
@@ -95,8 +103,8 @@ report = {
 
 print("Summary of moved files:\n" + "-" * 25)
 for category, count in report.items():
-    print(f"{category}: {count}")
+    print(f"{category}: {count}\n")
 
 
 # Things to Fix - 
-# 
+# Only add folders if the sort finds files of that type in the directory
