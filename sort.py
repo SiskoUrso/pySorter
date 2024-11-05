@@ -10,6 +10,7 @@ FILE_CATEGORIES = {
     "Videos": (".mp4", ".mov", ".mkv", ".avi"),
     "Audio": (".mp3", ".wav", ".ogg", ".flac", ".m4a"),
     "Books": (".epub", ".mobi"),
+    "Packages": (".deb", ".rpm", ".apk", ".exe", ".msi", ".dmg", ".pkg", ".appimage", ".jar", ".flatpak", ".snap"),
 }
 
 def create_dir(directory):
