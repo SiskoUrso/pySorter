@@ -36,7 +36,7 @@ def create_dir(directory):
         
 
 def move_files(files, directory, prefix=None):
-        """
+    """
     Moves a list of files to a specified directory, optionally filtering by a prefix.
 
     Parameters
@@ -50,7 +50,7 @@ def move_files(files, directory, prefix=None):
 
     Behavior
     --------
-    - Creates the target directory if it does not exist.
+    - Creates the target directory if it does not exist and there are files to move.
     - Moves each file from the list to the specified directory.
     - Adds each successfully moved file to the global `files_moved` list.
     - Prints a message indicating the move for each file.
@@ -60,6 +60,7 @@ def move_files(files, directory, prefix=None):
     ----
     Ensure that `create_dir` and `shutil` are properly imported and that `files_moved` is defined globally.
     """
+    if files:  
         create_dir(directory)
         for file in files:
             try:
@@ -107,4 +108,4 @@ for category, count in report.items():
 
 
 # Things to Fix - 
-# Only add folders if the sort finds files of that type in the directory
+# 
