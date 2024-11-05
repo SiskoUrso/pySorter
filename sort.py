@@ -18,7 +18,7 @@ FILE_CATEGORIES = {
     "CSS": ".css",
     "Config": (".env", ".ini", ".cfg", ".conf", ".config", ".properties"),
     "Logs": (".log",),
-    "RSS": (".rss", ".atmos"),
+    "RSS": (".rss", ".atom"),
 }
 
 def create_dir(directory):
