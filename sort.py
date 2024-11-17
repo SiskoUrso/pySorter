@@ -7,7 +7,7 @@ FILE_CATEGORIES = {
     "Documents": (".pdf", ".doc", ".docx", ".txt", ".rtf", ".odt", ".md", ".pages"),
     "PairDrop": "PairDrop_",
     "Archives": (".zip", ".rar", ".7z", ".tar", ".gz"),
-    "Videos": (".mp4", ".mov", ".mkv", ".avi", ".wmv", ".flv", ".webm", ".m4v", ".mpg", ".mpeg", ".3gp", ".ogv", ".vob", ".avi", ".ts", ".m4s"),
+    "Videos": (".mp4", ".mov", ".mkv", ".avi", ".wmv", ".flv", ".webm", ".m4v", ".mpg", ".mpeg", ".3gp", ".ogv", ".vob", ".ts", ".m4s"),
     "Audio": (".mp3", ".wav", ".ogg", ".flac", ".m4a"),
     "Books": (".epub", ".mobi"),
     "Packages": (".deb", ".rpm", ".apk", ".exe", ".msi", ".dmg", ".pkg", ".appimage", ".jar", ".flatpak", ".snap"),
